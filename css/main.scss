@@ -1,0 +1,44 @@
+$colors: rgb(209, 209, 209),rgb(197, 197, 197),rgb(116, 116, 116),rgb(246, 246, 246),rgb(209, 209, 209),rgb(235, 235, 235);
+
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0%;
+    font-family: 'Montserrat';
+}
+
+h1 {
+    margin: 3rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    // grid-gap: 1rem;
+
+    .card {
+        cursor: pointer;
+
+        transition: transform 1s;
+
+        @for $i from 1 through 6 {
+            &:nth-of-type(#{$i}) {
+                background: nth($colors, $i);
+            }
+        }
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+
+        img {
+            width: 100%;
+        }
+
+        .info {
+            padding: 1rem;
+        }
+    }
+}

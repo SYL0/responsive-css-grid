@@ -1,0 +1,65 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0%;
+  font-family: 'Montserrat';
+}
+
+h1 {
+  margin: 3rem;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(12rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+main .card {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+main .card:nth-of-type(1) {
+  background: #d1d1d1;
+}
+
+main .card:nth-of-type(2) {
+  background: #c5c5c5;
+}
+
+main .card:nth-of-type(3) {
+  background: #747474;
+}
+
+main .card:nth-of-type(4) {
+  background: #f6f6f6;
+}
+
+main .card:nth-of-type(5) {
+  background: #d1d1d1;
+}
+
+main .card:nth-of-type(6) {
+  background: #ebebeb;
+}
+
+main .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+main .card img {
+  width: 100%;
+}
+
+main .card .info {
+  padding: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
